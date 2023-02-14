@@ -1,13 +1,12 @@
 
 def actualizar(
         diccionario:dict
-    ):
+    ) -> dict:
         """
         La siguiente funcion te permite  cambiar el usuario anterior y ingresar uno nuevo
             ---------params---------
             diccionario (dict) = el diccionario donde se estan almacenando los datos
-            libro (str) = el libro que habias insertado
-            usuario_nuevo(str) = el usuario por el cual quieres cambiar el previo
+
             ---------return---------
             
             va a actualizar el valor de usuario

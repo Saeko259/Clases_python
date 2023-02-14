@@ -1,6 +1,6 @@
 def borra(  
     diccionario:dict
-) :
+) -> dict:
  """
  La siguiente funcion te permite eliminar un usuario
  --------params--------
