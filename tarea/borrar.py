@@ -1,7 +1,5 @@
-def borra(
-    
-    diccionario:dict,
-    usuario:str   
+def borra(  
+    diccionario:dict
 ) :
  """
  La siguiente funcion te permite eliminar un usuario

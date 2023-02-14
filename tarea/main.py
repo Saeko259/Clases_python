@@ -6,8 +6,7 @@ if __name__ == "__main__":
 
     libros ={ 'felipe':'habitos atomicos'}
     epa = True
-    y = 2 #para poder darle uso a la variable luego, el numero dos no tiene ninguna importancia, solo estamos creando una variable
-    n = 2
+
     while epa == True:
         print ("-"*50)
         print( )
@@ -19,13 +18,12 @@ if __name__ == "__main__":
                 5.No hacer nada
                 (x): """))
         match x:
-            case 1:
-                
-                agregar(libros,x,y)
+            case 1: 
+                agregar(libros)
             case 2:
-                actualizar(libros,x,y,n)
+                actualizar(libros)
             case 3:
-                borra(libros,x) 
+                borra(libros) 
             case 4:
                 leer_funcion(libros)
             case 5:

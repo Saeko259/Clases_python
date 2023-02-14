@@ -1,7 +1,5 @@
 def agregar(
-    diccionario:dict,
-    usuario:str,
-    libro:str
+    diccionario:dict
 ):
   """
     Funcion que permite al usuario ingresar sus datos
