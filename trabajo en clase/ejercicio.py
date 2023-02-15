@@ -22,7 +22,9 @@ def eliminar(
             listaa.remove(i)
     print(listaa)
     listaaa.clear()
-    
-
-        
+   
+while True:    
+    agregar(lista1)   
+    eliminar(lista1,lista2)
+ 
 
