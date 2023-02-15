@@ -1,4 +1,4 @@
-lista1 = ['hola','chao','tumadre']
+lista1 = []
 lista2 = []
 
 def agregar(
