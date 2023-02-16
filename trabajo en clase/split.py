@@ -1,5 +1,3 @@
-
-
 def palabras():
     x = input('Ingrese la palabra o oracion que quiera separar: ')
     y = x.split (' ')
