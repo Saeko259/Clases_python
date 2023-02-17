@@ -1,4 +1,4 @@
-
+from datetime import date
 def actualizar(
         diccionario:dict
     ) -> dict:
@@ -11,9 +11,16 @@ def actualizar(
             
             va a actualizar el valor de usuario
         """
-        usuario_viejo = str(input('Ingrese el nombre del usuario que quiere cambiar: '))
-        usuario_nuevo = str(input('Ingrese el nombre del nuevo usuario: '))
-        libro= str(input('Ingrese el nombre del libro que habian prestado: '))
-        diccionario[usuario_nuevo] = libro
-        diccionario.pop(usuario_viejo)
+        fecha = (f'{date.today()}')
+        usuarionom = input('Como se llama ?: ')
+        libro = input('Que libro quieres prestar ?: ')
+        x = list(diccionario[usuarionom])
+        vacio ={ }
+        
+        if usuarionom in diccionario:
+            usuarionom = (f'{x.count(usuarionom) + 2}.{usuarionom} ')
+            diccionario[usuarionom] = vacio
+            vacio['libro'] = libro
+            vacio['fecha'] = fecha
+            vacio['estado'] = 'prestado'
         return 

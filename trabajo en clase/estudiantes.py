@@ -36,10 +36,9 @@ def leer(
 def juntar(
     lista1:list,
     lista2:list,
-    elemento = ['HOLA']
+    
 ) -> list:
     lista3 = lista1 + lista2
-    lista3 = lista3 + elemento
     print(lista3)
     
         

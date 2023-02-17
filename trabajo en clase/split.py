@@ -2,17 +2,11 @@ def palabras():
     x = input('Ingrese la palabra o oracion que quiera separar: ')
     y = x.split (' ')
     diccionario = {}
-    lista = []
     for i in y:
-        j = list(i)
-        z = len(j)
-        lista.append(z)
-        for w in lista:
-            
-            diccionario[i]= (f'Longitud: {w}')
+        z = len(i)
+        diccionario[i]= (f'Longitud: {z}')
     print(diccionario)
 
-    lista.clear()
 
 ciclo_repepetivo = True
 while ciclo_repepetivo:
