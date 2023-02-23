@@ -8,6 +8,10 @@ def borra(
     usuario (str) = el nombre del usuario al que le prestamos el libro
  """
  usuario = str(input('Ingrese el nombre del usuario que quiera eliminar: ')) 
- 
- diccionario.pop(usuario)
+ x = input('Esta seguro que quiere eliminar su usuario ?, responda con un si o un no: ')
+ x = x.lower
+ if x == 'si':
+     diccionario.pop(usuario)
+ else:
+     print('Listico, no se ha eliminado')
  return

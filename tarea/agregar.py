@@ -12,14 +12,17 @@ def agregar(
   """
   
   fecha = (f'{date.today()}')
-  
   usuario_nombe = input("Ingrese su nombre: ")
-  usuario_nombe = ('1.'+usuario_nombe)
-  usuario = { }
   libro = (input('Ingrese el nombre del libro que quiera prestar: '))
-  diccionario[usuario_nombe] = usuario
-  usuario['libro'] = libro
-  usuario['fecha'] = fecha
-  usuario['estado'] = 'prestado'
-
+  
+  if diccionario.get(usuario_nombe) != None:
+    diccionario[usuario_nombe].append({'libro':libro,'fecha':fecha,'estado':'prestado'})
+  else:
+    usuario = [{}]
+    
+    diccionario[usuario_nombe] = usuario
+    chale = usuario[0]
+    chale['libro'] = libro
+    chale['fecha'] = fecha
+    chale['estado'] = 'prestado'
   return 

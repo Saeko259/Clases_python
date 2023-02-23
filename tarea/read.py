@@ -6,8 +6,5 @@ def leer_funcion(
     
     diccionario(dict) = diccionario que queremos que lea
     """
-    
-    for i in diccionario.keys():
-        j = diccionario[i]
-        print(i, '=>',j)
-        print( )
+
+    print(diccionario)
