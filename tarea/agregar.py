@@ -24,4 +24,4 @@ def agregar(
     chale['libro'] = libro
     chale['fecha'] = fecha
     chale['estado'] = 'prestado'
-  return 
+  

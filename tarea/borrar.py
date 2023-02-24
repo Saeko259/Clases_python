@@ -14,4 +14,4 @@ def borra(
      diccionario.pop(usuario)
  else:
      print('Listico, no se ha eliminado')
- return
+ 
