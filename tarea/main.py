@@ -1,14 +1,14 @@
-epa = True
+from agregar import *
+from borrar import *
+from read import *
+from estado import devolver
 
 if __name__ == "__main__":
-    from agregar import *
-    from borrar import *
-    from read import *
-    from estado import devolver
+
 
     libros ={}
 
-    while epa == True:
+    while  True:
         print ("-"*50)
         print( )
         x = int(input( """Escoge lo que quieras que suceda:
@@ -29,6 +29,5 @@ if __name__ == "__main__":
                 devolver(libros)
             case 5:
                 print('\nYa finalizo el proceso, chauuu')
-                epa == False
                 break
                 
