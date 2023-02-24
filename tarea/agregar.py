@@ -10,7 +10,6 @@ def agregar(
       -------return------
       agrega un usuario al diccionario
   """
-  
   fecha = (f'{date.today()}')
   usuario_nombe = input("Ingrese su nombre: ")
   libro = (input('Ingrese el nombre del libro que quiera prestar: '))

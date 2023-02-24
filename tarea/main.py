@@ -6,16 +6,7 @@ if __name__ == "__main__":
     from read import *
     from estado import devolver
 
-    libros ={'felipe':[
-    
-    {"libro":"habitos atomicos",
-    "fecha":"2023-02-14",
-    "estado":"prestado"},
-    
-    {"libro":"Club 5 am",
-    "fecha":"2023-02-14",
-    "estado":"prestado"},
-    ]}
+    libros ={}
 
     while epa == True:
         print ("-"*50)
