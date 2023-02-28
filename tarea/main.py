@@ -5,7 +5,6 @@ from estado import devolver
 
 if __name__ == "__main__":
 
-
     libros ={}
 
     while  True:
