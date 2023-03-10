@@ -4,10 +4,15 @@ from read import *
 from estado import devolver
 
 if __name__ == "__main__":
-
-    libros ={}
-
+    
+    # libros = {isaac:{id:1123123,
+    #                  nombre:isaac,
+    #                  libros= {libro:{no,bre:nmbre
+    #                                 FECHA:
+    #                                 estado:prestado}}}}
+    libros = {  }
     while  True:
+        
         print ("-"*50)
         print( )
         x = int(input( """Escoge lo que quieras que suceda:
