@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-from funciones_biblioteca import *
 from clases_biblioteca import *
 
 app = FastAPI(
@@ -34,6 +33,15 @@ def hello_wold_check():
     
 @app.get('/personas/{id}',tags=['Lectura de datos'])
 def id(id:int):
+    """Le ingresamos la identificacion de una persona en especifico para que nos devuelva toda 
+        la informacion de esta persona,.
+
+    Args:
+        id (int): La identificacion de la persona
+
+    Returns:
+        Los datos correspondientes a la identificacion de la persona
+    """
     return biblioteca[id]
 
 

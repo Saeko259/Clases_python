@@ -17,3 +17,4 @@ class PersonaBibliotecaSimple(BaseModel):
     
 class PersonaBibliotecaBasica(BaseModel):
     id:int
+    
