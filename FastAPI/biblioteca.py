@@ -1,6 +1,11 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
-app = FastAPI()
+from funciones_biblioteca import *
+from clases_biblioteca import *
+
+app = FastAPI(
+    title='Biblioteca',
+    version='0.4.1'
+)
 
 biblioteca ={ 1:{
         'nombre':'felipe',
@@ -22,7 +27,7 @@ biblioteca ={ 1:{
 def hello_wold_check():
     {
         'titulo':'Biblioteca',
-        'version':'V.1.0.3'
+        'version':'V.0.4.1'
     }
     return 'hello world'
 
@@ -36,14 +41,6 @@ def id(id:int):
 def all_people():
     return biblioteca
 
-
-class PersonaBiblioteca(BaseModel):
-    id:int
-    nombre:str
-    edad:int
-    libro:str
-    fecha:int
-    clave:int
     
 @app.post('/personas',tags=['Agregar datos'])
 def Personas_add(request:PersonaBiblioteca):
@@ -61,24 +58,16 @@ def Personas_add(request:PersonaBiblioteca):
      biblioteca[request.id] = x 
      return 'Ya se han agregado tus datos :D'
  
- 
-class PersonaLoca(BaseModel):
-    id:int
-    nombre:str
-    edad:int 
     
 @app.put('/personas',tags=['Modificar datos'])
-def personas_mod(request:PersonaLoca):
+def personas_mod(request:PersonaBibliotecaSimple):
     
     if biblioteca[request.id]['nombre'] != request.nombre:
             biblioteca[request.id]['nombre'] = request.nombre
     elif biblioteca[request.id]['edad'] != request.edad:
             biblioteca[request.id]['edad'] = request.edad
 
-
-class Juandi(BaseModel):
-    id:int
    
 @app.delete('/personas',tags=['Eliminar datos'])
-def personas_del(request:Juandi):
+def personas_del(request:PersonaBibliotecaBasica):
     biblioteca.pop(request.id)     
