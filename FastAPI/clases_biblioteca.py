@@ -1,11 +1,12 @@
 from pydantic import BaseModel
+from datetime import date
 
 class PersonaBiblioteca(BaseModel):
     id:int
     nombre:str
     edad:int
     libro:str
-    fecha:int
+    fecha:date
     clave:int
     
     
